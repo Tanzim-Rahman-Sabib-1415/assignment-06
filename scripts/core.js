@@ -83,41 +83,42 @@ function petMaker(petId, breed, price, date_of_birth, image, gender, pet_name) {
   pet_name = pet_name || 'Unknown';
 
   const card = `
-    <div class="card bg-base-100 shadow-xl p-4" id="pet_${petId}">
-                  <figure>
-                    <img id="pet-image-${petId}"
-                      src="${image}"
-                      alt="Shoes" />
-                  </figure>
-                  <div class="mt-6 flex flex-col gap-y-2 ">
-                    <h2 class="card-title">${pet_name}</h2>
-                    <div class="flex items-center gap-2">
-                      <i class="fa-solid fa-table"></i>
-                      <p>Breed: ${breed}</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <i class="fa-regular fa-calendar"></i>
-                      <p>Birth: ${date_of_birth}</p>
-                    </div>
-                    <div class="flex items-center gap-2">
-                      <i class="fa-solid fa-dollar-sign"></i>
-                      <p>Gender: ${gender}</p>
-                    </div>
-                    <div class="flex items-center gap-2 mb-4">
-                      <i class="fa-solid fa-mercury"></i>
-                      <p>Price: ${price} $</p>
-                    </div>
-                    <hr>
-                    <div class="flex justify-between mt-4">
-                      <button onclick="likedPet(${petId})" class="btn btn-outline"><i class="fa-regular fa-thumbs-up"></i></button>
-
-                      <label for="my_modal_6" class="btn btn-outline" id="adopt-btn-${petId}" onclick="adoptPet(${petId})">Adopt</label>
-
-                      <button onclick="dummy(${petId})" class="btn btn-outline">Details</button>
-                    </div>
-                  </div>
-                </div>
-    `
+    <div class="card bg-base-100 shadow-xl p-4 h-104" id="pet_${petId}">
+        <figure class="h-56 overflow-hidden flex items-center justify-center">
+            <img id="pet-image-${petId}"
+                src="${image}"
+                alt="Pet"
+                class="h-full w-auto object-cover" />
+        </figure>
+        <div class="mt-6 flex flex-col gap-y-2">
+            <h2 class="card-title">${pet_name}</h2>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-table"></i>
+                <p>Breed: ${breed}</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-regular fa-calendar"></i>
+                <p>Birth: ${date_of_birth}</p>
+            </div>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <p>Gender: ${gender}</p>
+            </div>
+            <div class="flex items-center gap-2 mb-4">
+                <i class="fa-solid fa-mercury"></i>
+                <p>Price: ${price} $</p>
+            </div>
+            <hr>
+            <div class="flex justify-between mt-4">
+                <button onclick="likedPet(${petId})" class="btn btn-outline">
+                    <i class="fa-regular fa-thumbs-up"></i>
+                </button>
+                <label for="my_modal_6" class="btn btn-outline" id="adopt-btn-${petId}" onclick="adoptPet(${petId})">Adopt</label>
+                <button onclick="dummy(${petId})" class="btn btn-outline">Details</button>
+            </div>
+        </div>
+    </div>
+`;
   petArea.innerHTML += card
 }
 
