@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/b1e3bc5b37.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body style="font-family: Lato;">
+  <header class="w-10/12 mx-auto mt-12">
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown lg:hidden md:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Home</a></li>
+            <li><a>Shop</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="flex gap-3 items-center">
+
+          <img src="./images/logo.webp" alt="">
+
+          <p class="text-3xl font-black">Peddy</p>
+        </div>
+      </div>
+      <div class="navbar-center hidden lg:block md:block">
+        <ul class="flex gap-8 text-slate-500">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="flex-none">
+          <div class="dropdown dropdown-end border rounded-full">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="">
+                <i class="fa-regular fa-user"></i>
+              </div>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <!-- hero -->
+    <div class="text-center mx-auto w-10/12" >
+
+      <h2 class="mt-12 text-2xl">Bringing Families Together ❤️‍🔥 </h2>
+      <h1 class="font-black text-7xl my-6">Your Path to Adoption Starts Here</h1>
+      <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+        at its layout. The point of using Lorem Ipsum is that it has a.</p>
+      <div class="flex mt-8">
+        <a href="#see-section" class="mx-auto">
+          <button class="btn btn-success text-white mx-auto">Veiw More</button>
+        </a>
+
+      </div>
+      <div class="flex">
+        <img class="mx-auto object-cover" src="./images/pet.webp" alt="">
+      </div>
+    </div>
+    <!-- adopt section -->
+    <div class="" id="see-section">
+      <div class="flex w-3/4 text-center mx-auto flex-col mb-12">
+        <h1>Adopt Your Best Friend</h1>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking
+          at its layout. The point of using Lorem Ipsum is that it has a.</p>
+      </div>
+      <!-- category -->
+      <div id="catagory"
+        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-12 gap-y-2 w-10/12 mx-auto">
+      </div>
+      <!-- main -->
+      <div class="w-10/12 mx-auto ">
+        <div class="flex justify-between my-8">
+          <p class="text-2xl font-black">Best Deal For you</p>
+          <div class="flex">
+            <button onclick="sort_catgory()" class="btn btn-success text-white mx-auto font-bold text-lg">Sort by Price</button>
+          </div>
+        </div>
+        <!-- box -->
+        <div class="flex gap-5 flex-col md:flex-row lg:flex-row">
+
+          <div class="w-full grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 md:w-3/4 lg:w-3/4 h-fit mx-auto" id="card_holder">
+            <!--* card ************************* -->
+            <!-- <div class="card bg-base-100 shadow-xl p-4" id="pet_1">
+                  <figure>
+                    <img
+                      src="https://i.ibb.co.com/p0w744T/pet-1.jpg"
+                      alt="Shoes" />
+                  </figure>
+                  <div class="mt-6 flex flex-col gap-y-2 ">
+                    <h2 class="card-title">Mister Tartosh</h2>
+                    <div class="grid grid-cols-2 gap-2">
+
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-table"></i>
+                        <p>Breed: Mojalala</p>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-regular fa-calendar"></i>
+                        <p>Birth: 2024</p>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p>Gender: Female</p>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-mercury"></i>
+                        <p>Price: 199 $</p>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        <p>Vaccinated Status: Ok</p>
+                      </div>
+
+                    </div>
+                  
+
+                    <hr class="m-y-2">
+                    <div>
+                      <h1>Details Information</h1>
+                      <p>gdshkagdsahkgksadsgajbjkgdskjgbasdkjgb asdgsadgasdg sgadsagsdag</p>
+                    </div>
+
+                    <div class="flex justify-between">
+                      <button onclick="likedPet(1)" class="btn btn-outline"><i class="fa-regular fa-thumbs-up"></i></button>
+                      
+                      <label for="my_modal_6" class="btn btn-outline" id="adopt-btn-1" onclick="adoptPet(1)">Adopt</label>
+                    
+                      <button onclick="detailPet(1)" class="btn btn-outline">Details</button>
+                    </div>
+                  </div>
+                </div> -->
+            <!-- ****************************************** -->
+          </div>
+
+          <div class="w-full drop-shadow border border-slate-200 h-fit grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2  gap-4 mx-auto rounded-xl p-4 lg:w-1/4 md:w-1/4" id="liked-image-box">
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 bg-black text-white mx-auto py-24 px-20 mt-20">
+      <div>
+        <div class="flex gap-3 items-center mb-6">
+          <img src="./images/logo.webp" alt="">
+          <p class="text-3xl font-black">Peddy</p>
+        </div>
+        <p>Location: av. Washington 165, NY CA 54003</p>
+        <p>Phone: +31 85 964 47 25</p>
+        <p>Email: info@yourdomain.com</p>
+        <p>Openings hours: 9.00 AM - 5.00 PM</p>
+
+        <div class="flex gap-y-5 mt-6">
+
+        </div>
+      </div>
+
+      <div class="">
+        <div class="pl-4">
+          <h1 class="mb-8 text-2xl font-semibold">Useful Links</h1>
+        <ul>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Animals</li>
+          <li>Foundation</li>
+          <li>Contact</li>
+        </ul>
+        </div>
+        
+      </div>
+      <div class="flex flex-col">
+        <h1 class="mb-5 text-2xl font-semibold">Drop a Message</h1>
+        <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs" />
+        <button class="btn w-full max-w-xs mt-3">Subscribe</button>
+      </div>
+
+    </footer>
+  </main>
+  <!-- modal -->
+  <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+  <div class="modal" role="dialog">
+    <div class="modal-box">
+      <!-- <h3 class="text-3xl font-bold">Congrats   🎉</h3> -->
+      <h3 class="text-3xl font-bold" id="modal-counter">3
+
+      </h3>
+      <p class="py-4">You have successfully adopted this little one</p>
+      <div class="modal-action">
+        <label for="my_modal_6" class="btn bg-green-100">Thanks!</label>
+      </div>
+    </div>
+  </div>
+  <!-- info  modal -->
+  <dialog id="my_modal_1" class="modal">
+    <div class="modal-box">
+      <h3 class="text-lg font-bold">Hello!</h3>
+      <p class="py-4">Press ESC key or click the button below to close</p>
+      <div class="modal-action">
+        <form method="dialog">
+          <!-- if there is a button in form, it will close the modal -->
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="/scripts/core.js"></script>
+</body>
+
+</html>
