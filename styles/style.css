@@ -24,3 +24,8 @@
       0%       {transform: translateX(-37.5%) rotate(0turn)} 
       80%,100% {transform: translateX(-37.5%) rotate(1turn)} 
   }
+
+  .footer-bg{
+    background-color: #131313;
+  }
+

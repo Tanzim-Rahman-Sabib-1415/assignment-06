@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" class="scroll-smooth">
 
 <head>
   <meta charset="UTF-8">
@@ -68,7 +68,7 @@
   </header>
   <main>
     <!-- hero -->
-    <div class="text-center mx-auto w-10/12" >
+    <div class="text-center mx-auto w-10/12">
 
       <h2 class="mt-12 text-2xl">Bringing Families Together ❤️‍🔥 </h2>
       <h1 class="font-black text-7xl my-6">Your Path to Adoption Starts Here</h1>
@@ -100,13 +100,16 @@
         <div class="flex justify-between my-8">
           <p class="text-2xl font-black">Best Deal For you</p>
           <div class="flex">
-            <button onclick="sort_catgory()" class="btn btn-success text-white mx-auto font-bold text-lg">Sort by Price</button>
+            <button onclick="sort_catgory()" class="btn btn-success text-white mx-auto font-bold text-lg">Sort by
+              Price</button>
           </div>
         </div>
         <!-- box -->
         <div class="flex gap-5 flex-col md:flex-row lg:flex-row">
 
-          <div class="w-full grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 md:w-3/4 lg:w-3/4 h-fit mx-auto" id="card_holder">
+          <div
+            class="w-full grid gap-5 grid-cols-1 sm:grid-cols-2 md:grid-cols-2  lg:grid-cols-3 md:w-3/4 lg:w-3/4 h-fit mx-auto"
+            id="card_holder">
             <!--* card ************************* -->
             <!-- <div class="card bg-base-100 shadow-xl p-4" id="pet_1">
                   <figure>
@@ -160,46 +163,56 @@
             <!-- ****************************************** -->
           </div>
 
-          <div class="w-full drop-shadow border border-slate-200 h-fit grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2  gap-4 mx-auto rounded-xl p-4 lg:w-1/4 md:w-1/4" id="liked-image-box">
+          <div
+            class="w-full drop-shadow border border-slate-200 h-fit grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2  gap-4 mx-auto rounded-xl p-4 lg:w-1/4 md:w-1/4"
+            id="liked-image-box">
           </div>
 
         </div>
       </div>
     </div>
     <!-- footer -->
-    <footer class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 bg-black text-white mx-auto py-24 px-20 mt-20">
+    <footer
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3  text-white mx-auto py-24 px-20 mt-20 gap-y-9 footer-bg">
       <div>
         <div class="flex gap-3 items-center mb-6">
           <img src="./images/logo.webp" alt="">
           <p class="text-3xl font-black">Peddy</p>
         </div>
-        <p>Location: av. Washington 165, NY CA 54003</p>
-        <p>Phone: +31 85 964 47 25</p>
-        <p>Email: info@yourdomain.com</p>
-        <p>Openings hours: 9.00 AM - 5.00 PM</p>
+        <div class="flex flex-col text-white/60">
+          <p>Location: av. Washington 165, NY CA 54003</p>
+          <p>Phone: +31 85 964 47 25</p>
+          <p>Email: info@yourdomain.com</p>
+          <p>Openings hours: 9.00 AM - 5.00 PM</p>
+        </div>
 
-        <div class="flex gap-y-5 mt-6">
-
+        <div class="flex gap-y-5 gap-x-6 mt-6 items-center">
+          <i class="fa-brands fa-facebook fa-lg " style="color: #1877F2;"></i>
+          <i class="fa-brands fa-x-twitter fa-lg" style="color: white;"></i>
+          <i class="fa-brands fa-youtube fa-lg" style="color: #ff0000;"></i>
+          <div class="bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] bg-clip-text text-transparent">
+            <i class="fa-brands fa-instagram fa-lg"></i>
+          </div>
         </div>
       </div>
 
       <div class="">
         <div class="pl-4">
           <h1 class="mb-8 text-2xl font-semibold">Useful Links</h1>
-        <ul>
-          <li>Home</li>
-          <li>About Us</li>
-          <li>Animals</li>
-          <li>Foundation</li>
-          <li>Contact</li>
-        </ul>
+          <ul class="text-white/60">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Animals</li>
+            <li>Foundation</li>
+            <li>Contact</li>
+          </ul>
         </div>
-        
+
       </div>
       <div class="flex flex-col">
         <h1 class="mb-5 text-2xl font-semibold">Drop a Message</h1>
-        <input type="text" placeholder="Enter your email" class="input input-bordered w-full max-w-xs" />
-        <button class="btn w-full max-w-xs mt-3">Subscribe</button>
+        <input type="text" placeholder="Enter your email" class="input  w-full max-w-xs placeholder:text-white/60 bg-white/5" />
+        <button class="btn w-full max-w-xs mt-3 bg-teal-600 border-none text-xl font-bold">Subscribe</button>
       </div>
 
     </footer>
